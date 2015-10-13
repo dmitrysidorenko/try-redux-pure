@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Try Redux</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-app="myApp">
+<ui-view></ui-view>
+
+<script src="bower_components/redux/index.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script src="core.js"></script>
+<script src="app.js"></script>
+
+<script src="shared/index.js"></script>
+<script src="shared/middleware/callAPIMiddleware.js"></script>
+<script src="shared/middleware/thunkMiddleware.js"></script>
+<script src="shared/utils/makeActionCreator.js"></script>
+<script src="shared/utils/guid.js"></script>
+<script src="shared/utils/createReducer.js"></script>
+<script src="shared/utils/observeStore.js"></script>
+
+<script src="menu/index.js"></script>
+<script src="menu/reducer.js"></script>
+
+<script src="dashboard/api.js"></script>
+<script src="dashboard/actionCreators.js"></script>
+<script src="dashboard/index.js"></script>
+<script src="dashboard/directives.js"></script>
+<script src="dashboard/reducer.js"></script>
+
+<script src="plugins/persons/index.js"></script>
+<script src="plugins/persons/api.js"></script>
+<script src="plugins/persons/reducer.js"></script>
+<script src="plugins/persons/actionCreators.js"></script>
+<script src="plugins/persons/service.js"></script>
+</body>
+</html>

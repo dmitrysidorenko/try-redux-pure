@@ -1,0 +1,7 @@
+<h1>Dashboard</h1>
+<ul>
+    <li class="widget" ng-repeat="w in dashboard.widgets">
+        <button ng-click="removeWidget(w)">Close</button>
+        <dashboard-widget data="w"></dashboard-widget>
+    </li>
+</ul>

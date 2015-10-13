@@ -1,0 +1,15 @@
+<div class="menu">
+    <input type="text" ng-model="searchString" ng-focus="onFocus()" ng-blur="onBlur()"
+           ng-model-options="{debounce: 500}" ng-change="search()"/>
+
+    <div class="omnibox" ng-if="showOmnibox">
+        <button ng-show="showCreateButton && !searchPersons.isFetching" ng-click="createNewPerson()">
+            Create New Person
+        </button>
+        <div ng-show="searchPersons.isFetching">Fetching...</div>
+        <div ng-show="searchPersons.error">{{searchPersons.error}}</div>
+        <ul>
+            <li ng-repeat="p in searchPersons.persons" ng-click="openWidget(p)">{{p.name}}</li>
+        </ul>
+    </div>
+</div>
